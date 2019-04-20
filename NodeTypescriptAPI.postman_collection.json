@@ -1,0 +1,173 @@
+{
+	"info": {
+		"name": "NodeTypescriptAPI",
+		"_postman_id": "9d588890-c435-fd66-eefb-d994fbf7313b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/user/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxfSwiaWF0IjoxNTU1Njc3MjIxLCJleHAiOjE1NTU2NzcyODF9.2Tvv867iymn7XTqO7kdesHqQv901Nfr-efvuGY-6_Vk"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Chinkita4\",\n\t\"email\": \"chinkita1@xieno.com\",\n\t\"password\": \"chinkita1234561\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"add"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"kalpana.sisodiya@xieno.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/update?id=5",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxfSwiaWF0IjoxNTU1Njc5NTk2LCJleHAiOjE1NTU2Nzk2NTZ9.ygoVOpYGEiwZ7an-B2zB9ER1m0Fg13KP9VFgFwqKl04"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Jim\",\n\t\"email\": \"jim@xieno.com\",\n\t\"password\": \"jim1234561\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/update?id=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/user/update?id=5",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxfSwiaWF0IjoxNTU1NjgwMzQ0LCJleHAiOjE1NTU2ODA0MDR9.hl4_M81-SZ1-v_5n_sO3rRZL_MAJE6oKso6gGNy8AvM"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/user/delete?id=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "5",
+							"equals": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
